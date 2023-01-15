@@ -20,7 +20,7 @@ margin:auto;
 </head>
 <body>
     <h1 class="text-success"><i>Les donnes administratives</i></h1>
-    <table class="table table-striped table-success" border="1">
+    <table class="table table-striped table-bordered">
         <tr>
             <th>
                 <i>Matricule</i>
