@@ -35,12 +35,12 @@ $role=$_SESSION['role'];
    </div>
    <section class="container my-2 bg-dark w-50 text-light p-2">
    <form   class="row g-3 p-3" action="#" method="POST">
-    <p style="color:red;"id="message"></p>
-    <br>
-    <div class="col-md-4">
+   <div class="col-md-4">
     <label for="inputEmail4" class="form-label">Ancien mot de passe*</label>
-    <input class="form-control"  type="password" name="pas1" placeholder="" id="">
+    <input class="form-control" type="password" name="pas1"  placeholder="" id="">
     </div>
+    <br>
+    <br>
     <div class="col-md-4">
     <label for="inputEmail4" class="form-label">Nouveau mot de passe*</label>
     <input class="form-control" type="password" name="pas2" placeholder="" id="">
@@ -52,8 +52,11 @@ $role=$_SESSION['role'];
     <div class="col-12">
     <input  class="form-control" class="clr" type="submit" value="Modifier" name="submit"> 
             </div>
-    <br>
-    <?php
+            
+            <p style="color:red;"id="message"></p>
+  </form>
+   </section>
+   <?php
 if($role==1)
 {
     echo "    <a class='btn btn-dark' href='admin.php'>Retour à la page d'acueil</a>   ";
@@ -63,8 +66,6 @@ else
    echo "     <a  class='btn btn-dark' href='employee.php'>Retour à la page d'acueil</a> ";
 }
 ?>
-  </form>
-   </section>
   
 <?php
 if(isset($_POST['submit']))
